@@ -74,7 +74,7 @@ a {
 .item {
   display: flex;
   text-align: center;
-  /* vertical-align: middle; */
+
 }
 
 .header_logo {
@@ -82,7 +82,6 @@ a {
   padding-top: 25px;
   padding-bottom: 24px;
   display: flex;
-  /* background-color: red; */
 }
 
 .header_list {
@@ -90,9 +89,6 @@ a {
   display: flex;
   text-align: center;
   justify-content: center;
-  /* padding-top: 24px;
-  padding-bottom: 25px; */
-  /* background-color: tomato; */
 }
 
 .header_portfolio .curren {
@@ -128,97 +124,37 @@ a {
 .portfolio,
 .header_item {
   position: relative;
-  /* color: #484848;
-  font-size: 1.25rem;
-  text-decoration: none; */
-}
-
-.curren:hover::before {
-  transform: scale(1);
-}
-
-.curren::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 1px;
-  width: 100%;
-  height: 3px;
-  background-color: #2196f3;
-  border-radius: 4px;
-
-  transform: scale(0);
-}
-
-.header_logo .curren {
-  overflow: hidden;
-  position: relative;
-  color: #484848;
-  font-size: 1.25rem;
-  text-decoration: none;
-}
-
-.curren:hover:before {
-  transform: scale(1);
-}
-
-.curren::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  width: 100%;
-  height: 3px;
-  background-color: #2196f3;
-  border-radius: 4px;
-
-  width: 100%;
-  transform: scale(0);
-}
-
-.header_logo {
-  overflow: hidden;
 }
 
 .curren {
   padding-top: 32px;
   padding-bottom: 32px;
   position: relative;
-}
-
-.current:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 3px;
-  background: #2196f3;
-  border-radius: 2px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  /* transform: translate(-100%); */
-
-  display: none;
-  opacity: 0;
-}
-
-.current:hover {
-  /* transform: translate(100%); */
-  display: block;
-  opacity: 1;
-  content: "";
-  /* background-color: #2196f3; */
   color: #2196f3;
 }
-.header_list a:hover::before {
-  opacity: 1;
+
+.current::after {
+  position: absolute;
 }
+
+.header_list a {
+  float: left;
+  display: block;
+  border-radius: 2px;
+  border-bottom: 3px solid transparent;
+}
+
+.header_list a:hover {
+  border-bottom: 3px solid #2196f3;
+}
+
+.header_list a :active {
+  border-bottom: 3px solid #2196f3;
+}
+
 
 .header_item {
   display: flex;
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
-  /* background-color: #2f303a; */
 }
 
 .header_list .header_item + .header_item {
@@ -232,8 +168,6 @@ a {
   vertical-align: middle;
   margin-left: auto;
   text-align: center;
-  /* justify-content: center; */
-  /* background-color: aqua; */
 }
 
 .out_list .item {
@@ -288,10 +222,6 @@ a {
   color: #212121;
 }
 
-.portfolio_header:hover {
-  /* background-color: #2196f3; */
-}
-
 .contacs {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -300,16 +230,6 @@ a {
   line-height: calc(16 / 14);
   color: #212121;
 }
-
-.nav_hr {
-}
-
-/* .item_svg {
-  width: 10px;
-  height: 16px;
-  outline: 1px solid #2196f3;
-  padding-right: 10px;
-} */
 
 .item_svg:hover,
 .mail:hover,
@@ -684,21 +604,15 @@ a {
   display: flex;
 }
 
-.regular_conteiner {
-  padding-top: 87px;
-  margin-bottom: 101px;
-  /* outline: 1px solid rgb(106, 0, 255); */
-}
-
 .customers {
-  padding-bottom: 50px;
+  padding-bottom: 94px;
   text-align: center;
 }
 
 .cust_link .dfg {
+  margin-bottom: 94px;
   width: 166px;
   height: 92px;
-  /* margin-right: 30px; */
   border: 1px solid #afb1b8;
   border-radius: 4px;
   /* background-color: tomato; */
@@ -814,15 +728,19 @@ a {
 }
 
 .portfolio_text {
-  padding: 63px 32px;
+  padding: 63px 24px;
   display: flex;
-  text-align: center;
+  text-align: left;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(28 / 18);
 
   /* opacity: 0; */
   /* transform: scale(1, -1); */
@@ -937,6 +855,7 @@ a {
 .footer_href {
   margin: 0px;
   width: 270px;
+  cursor: none;
 }
 
 .ftr_adress {
@@ -952,7 +871,7 @@ a {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: #ffffff;
-  cursor: auto;
+  cursor: none;
 }
 
 .footer_mail {
@@ -960,7 +879,7 @@ a {
   font-size: 14px;
   line-height: calc(24 / 14);
   color: rgba(255, 255, 255, 0.6);
-  cursor: auto;
+  cursor: none;
 }
 
 .footer_tel {
