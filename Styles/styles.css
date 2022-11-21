@@ -48,9 +48,6 @@ li {
   /* border: 1px solid red; */
 }
 
-.line {
-  border: 1px solid #ececec;
-}
 
 a {
   text-decoration: none;
@@ -62,7 +59,8 @@ a {
 
 /* Header */
 
-.header {
+header {
+  border-bottom: 1px solid #ECECEC
 }
 
 .header_navi {
