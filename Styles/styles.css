@@ -90,11 +90,11 @@ header {
   justify-content: center;
 }
 
-.studio .portfolio {
+/* .studio .portfolio {
   padding-top: 32px;
   padding-bottom: 32px;
   position: relative;
-}
+} */
 .current {
   color: #2196f3;
 }
