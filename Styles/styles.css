@@ -51,18 +51,44 @@ body {
 
 a {
   text-decoration: none;
-  color: #2e2f42;
+  color: var(--brand-color)
+  ;
+  
 }
 
 .footer {
   /* cursor: none; */
 }
 
+
+/* :root {
+  --brand-color: #2e2f42;
+} */
+
+/* :root {
+  --brand-color: #3f51b5;
+} */
+
+/* :root {
+  --brand-color: #3f51b5;
+} */
+
+/* :root {
+  --brand-color: #3f51b5;
+} */
+
+/* :root {
+  --brand-color: #3f51b5;
+} */
+
+/* :root {
+  --brand-color: #3f51b5;
+} */
+
 /* Header */
 
 header {
   border-bottom: 1px solid #ececec;
-  fill: currentColor;
 }
 
 .header-navi {
