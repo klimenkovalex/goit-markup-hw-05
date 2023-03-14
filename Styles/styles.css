@@ -824,20 +824,23 @@ header {
 
 .footer_icons {
   /* margin: 0px; */
-  display: flex;
+  display: inline-block;
   width: 270px;
   padding-bottom: 132px;
   padding-top: 100px;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
 }
 
 .social-icons {
+  display: flex;
   padding: 0;
   margin: 0;
-  display: block;
+  /* display: block; */
 }
 
 .social_ftr {
+  /* display: inline-block; */
+  /* align-items: center; */
   padding-bottom: 16px;
   /* padding-top: 72px; */
   /* text-transform: uppercase; */
@@ -854,8 +857,8 @@ header {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  display: inline-block;
-  justify-content: flex-start;
+  /* display: inline-block; */
+  /* justify-content: flex-start; */
   /* background: rgba(255, 255, 255, 0.18); */
 }
 .social-icons .social-link {
