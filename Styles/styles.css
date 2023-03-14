@@ -822,6 +822,11 @@ header {
   cursor: auto;
 } */
 
+/* .footer_web,
+.social_ftr {
+align-items: baseline;
+} */
+
 .footer_icons {
   /* margin: 0px; */
   display: inline-block;
