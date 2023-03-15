@@ -671,33 +671,24 @@ header {
 /* Footer */
 
 .conteiner_footer {
-  display: inline-block;
   display: flex;
 }
 
 .footer {
-  margin: 0px;
-  padding: auto;
   background: var(--naviblue-color);
 }
 
 .footer_nav {
   margin-right: 120px;
   width: 264px;
-  padding-top: 100px;
+  margin-top: 100px;
 }
 
 .footer_web {
   justify-content: flex-start;
+  margin-bottom: 16px;
 }
 
-.footer_list {
-  margin-right: 70px;
-  padding-top: 20px;
-
-  justify-content: flex-start;
-  font-style: normal;
-}
 
 .footer-link {
   padding-top: 16px;
