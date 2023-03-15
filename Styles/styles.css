@@ -64,8 +64,10 @@ a {
 
 /* Header */
 
-header {
+.header {
+  border-bottom: 2px solid var(--cornflower-color);
 }
+
 
 .header-navi {
   display: flex;
@@ -440,7 +442,6 @@ header {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  justify-content: start;
 }
 
 .social-item:not(:last-child) {
@@ -532,9 +533,8 @@ header {
 /* Section Portfolio */
 
 .section_portfolio {
-  position: relative;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 100px;
+  padding-bottom: 120px;
   background-color: var(--white-color);
 }
 
@@ -599,10 +599,14 @@ header {
 
 .portfolio_list {
   width: 360px;
-  border: 1px solid var(--white-color);
+  border: 2px solid var(--cloud-color);
   margin-right: 24px;
   margin-bottom: 48px;
   background-color: var(--white-color);
+}
+
+.portfolio_list:hover {
+  border: 2px solid var(--lightslate-color);
 }
 
 .portfolio_list:nth-child(3n) {
@@ -684,14 +688,8 @@ header {
   margin-top: 100px;
 }
 
-.footer_web {
-  justify-content: flex-start;
-  margin-bottom: 16px;
-}
-
-
 .footer-link {
-  padding-top: 16px;
+  margin-top: 16px;
   max-width: 264px;
   font-weight: 400;
   font-size: 16px;
@@ -701,9 +699,8 @@ header {
 
 .footer_icons {
   display: inline-block;
-  width: 270px;
-  padding-bottom: 132px;
-  padding-top: 100px;
+  margin-top: 100px;
+  margin-bottom: 132px;
 }
 
 .social-icons {
@@ -713,19 +710,13 @@ header {
 }
 
 .social_ftr {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
 
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24 / 16);
   color: var(--white-color);
   color: var(--white-color);
-}
-
-.social-icons > .social-item {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
 }
 
 .social-icons .social-link {
@@ -742,8 +733,6 @@ header {
 .social-items {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  justify-content: start;
 }
 
 .social-items:not(:last-child) {
