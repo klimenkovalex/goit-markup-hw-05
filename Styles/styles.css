@@ -690,11 +690,13 @@ img {
 
 .footer {
   background: var(--naviblue-color);
+  padding-top: 100px;
+  padding-bottom: 132px;
 }
 
 .conteiner_footer {
   display: flex;
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 
 .footer_nav {
@@ -712,7 +714,7 @@ img {
 }
 
 .footer_icons {
-  padding-bottom: 132px;
+  /* padding-bottom: 132px; */
 }
 
 .social-icons {
